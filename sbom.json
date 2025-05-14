@@ -1,0 +1,36 @@
+{
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.6",
+    "version": 1,
+    "metadata": {
+      "timestamp": "2025-05-14T15:00:00Z",
+      "tools": [
+        {
+          "vendor": "Custom",
+          "name": "IaC-to-CycloneDX",
+          "version": "0.1.0"
+        }
+      ]
+    },
+    "properties": [
+      { "name": "cloud:provider", "value": "AWS" },
+      { "name": "cloud:region", "value": "us-east-1" },
+      { "name": "cloud:service", "value": "S3" },
+      { "name": "cloud:resource_name", "value": "my-cloudformation-s3-bucket" },
+      { "name": "iac:type", "value": "cloudformation" },
+      { "name": "iac:source", "value": "template.yaml" }
+    ],
+    "components": [
+      {
+        "type": "platform",
+        "name": "AWS::S3::Bucket",
+        "version": "N/A",
+        "purl": "pkg:cloudformation/AWS::S3::Bucket@my-cloudformation-s3-bucket",
+        "properties": [
+          { "name": "resource_type", "value": "AWS::S3::Bucket" },
+          { "name": "description", "value": "Simple S3 Bucket Example" }
+        ]
+      }
+    ]
+  }
+  

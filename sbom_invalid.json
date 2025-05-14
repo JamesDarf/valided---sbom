@@ -1,0 +1,14 @@
+{
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.6",
+    "version": "one",
+    "components": [
+      {
+        "type": "bucket",
+        "name": "",
+        "version": "N/A",
+        "purl": "invalid-url"
+      }
+    ]
+  }
+  
